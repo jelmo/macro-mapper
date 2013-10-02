@@ -10,7 +10,7 @@ class MappingTest extends SpecificationWithJUnit {
     }
 
     "convert" in {
-      Mapping.mapper.convert(Person("Carlo", 43, "Crissier", whatever = true)) === PersonDTO("Carlo",43,"Crissier",whatever = true)
+      Mapping.mapper(Person("Carlo", 43, "Crissier", whatever = true)) === PersonDTO("Carlo",43,"Crissier",whatever = true)
     }
   }
 }
